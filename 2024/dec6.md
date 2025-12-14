@@ -1,0 +1,5 @@
+# Dec 6
+###### [link to problem](https://adventofcode.com/2024/day/6)
+###### Today's problem involved tracing the path of a guard and finding how many unique spaces they enter before leaving the map. you are given a map and the starting location/direction of the guard. anytime they hit a wall they turn right. this is a fairly simple problem to solve as it just involves changing the location and direction of the guard a lot. I did this with an uninteresting while loop and a lot of if statements.
+### Part 2
+###### Part 2 was a bit more interesting, you had to find how many spaces where you could place a box and put him in a loop. to do this I first reran part 1 but tracked the path into a list, and tested for loops tracking the path and seeing if you have the same space and location in it already. the difficulty comes from the fact that lists are slow and also my personal problem was I didn't stop it from placing a box on the start position(where the guard is already), the solution is simply use a set instead of a list, which both saves space since it won't accept repeats and is way way faster than a list.
